@@ -5,6 +5,6 @@
     <xi:include href="pages.xml" />
     <xi:include href="datasources.xml" />
     <xi:include href="procedures.xml" />
-    <xi:include href="roles.xml" />
+    <xi:include href="groups.xml" />
     <xi:include href="permissions.xml" />
 </config>
