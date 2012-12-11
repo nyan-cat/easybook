@@ -1,0 +1,92 @@
+body
+{
+    background-color: #bda;
+    font-family: "Trebuchet MS";
+    margin: 0;
+    padding: 2em;
+}
+
+h1
+{
+    font-weight: normal;
+}
+
+a, a:visited
+{
+    color: #09f;
+}
+
+a:hover
+{
+    color: #e00;
+}
+
+a.dotted, a.dotted:visited
+{
+    text-decoration: none;
+    border-bottom: 1px dotted #09f;
+}
+
+a.dotted:hover
+{
+    border-color: #e00;
+}
+
+.container
+{
+    background-color: #bda;
+    text-align: center;
+}
+
+.column
+{
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    padding: 2em;
+    text-align: left;
+    width: 1000px;
+}
+
+.row
+{
+    border-bottom: 1px dotted #ccc;
+    padding: 1em 0;
+}
+
+input.text, textarea
+{
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    font-family: "Trebuchet MS";
+    font-size: 1em;
+    padding: 0.25em;
+    vertical-align: middle;
+    width: 600px;
+}
+
+input.submit, a.button, a.button:visited
+{
+    color: #fff;
+    background-color: #369;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-family: "Trebuchet MS";
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.25em 1em;
+    text-decoration: none;
+}
+
+input.submit:hover, a.button:hover
+{
+    background-color: #69c;
+}
+
+label.error
+{
+    color: #f00;
+    padding-left: 1em;
+}

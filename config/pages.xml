@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<pages>
+    <page name="home" url="/">
+        <template src="/tpl/main.xsl">
+            <template name="head" src="/tpl/home/head.xsl" />
+            <template name="body" src="/tpl/home/body.xsl" />
+        </template>
+    </page>
+    <page name="about" url="/about/">
+        <template src="/tpl/main.xsl">
+            <template name="head" src="/tpl/about/head.xsl" />
+            <template name="body" src="/tpl/about/body.xsl" />
+        </template>
+    </page>
+    <page name="post" url="/post/" action="/php/post.php" />
+    <page name="edit" url="/edit/" action="/php/edit.php" permission="message:edit(message_id -> $post:id)" />
+    <page name="delete" url="/delete/(message_id -> natural)/" action="/php/delete.php" permission="message:edit(message_id -> $message_id)" />
+</pages>

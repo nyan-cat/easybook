@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<permissions>
+    <permission name="message:edit">
+        <param name="minutes" type="uint" />
+        <param name="ip" type="ipv4" />
+        message:new(minutes -> $minutes) and message:owner(ip -> $ip)
+    </permission>
+    <permission name="message:edit">
+        <param name="message_id" type="natural" />
+        message:new(message_id -> $message_id) and message:owner(message_id -> $message_id)
+    </permission>
+</permissions>

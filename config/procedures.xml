@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<procedures>
+    <procedure name="message:list" datasource="main" root="messages" item="message" empty="true">
+        select id, author, message, ip, timestampdiff(minute, created, now()) as minutes, created from message order by created desc;
+    </procedure>
+    <procedure name="message:create" datasource="main">
+        <param name="author" type="string" />
+        <param name="message" type="text" />
+        <param name="ip" type="ipv4" />
+        insert into message (author, message, ip, created) values ($author, $message, $ip, now());
+    </procedure>
+    <procedure name="message:edit" datasource="main">
+        <param name="message_id" type="natural" />
+        <param name="author" type="string" />
+        <param name="message" type="text" />
+        update message set author = $author, message = $message where id = $message_id;
+    </procedure>
+    <procedure name="message:delete" datasource="main">
+        <param name="message_id" type="natural" />
+        delete from message where id = $message_id;
+    </procedure>
+    <procedure name="message:minutes" datasource="main" root="messages" item="message" empty="false">
+        <param name="message_id" type="natural" />
+        select timestampdiff(minute, created, now()) as minutes from message where id = $message_id;
+    </procedure>
+    <procedure name="message:ip" datasource="main" root="messages" item="message" empty="false">
+        <param name="message_id" type="natural" />
+        select ip from message where id = $message_id;
+    </procedure>
+</procedures>

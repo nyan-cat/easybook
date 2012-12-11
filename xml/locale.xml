@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<local>
+    <menu>
+        <home>
+            <en>Home</en>
+            <ru>Главная</ru>
+        </home>
+        <about>
+            <en>About</en>
+            <ru>О сайте</ru>
+        </about>
+    </menu>
+    <home>
+        <title>
+            <en>Easybook homepage</en>
+            <ru>Гостевая книга Easybook</ru>
+        </title>
+    </home>
+    <about>
+        <title>
+            <en>About Easybook</en>
+            <ru>О сайте Easybook</ru>
+        </title>
+        <description>
+            <en>
+                This is sample website built on Easyweb CMF.
+            </en>
+            <ru>
+                Это пример сайта, построенного на Easyweb CMF.
+            </ru>
+        </description>
+    </about>
+    <author>
+        <en>Author</en>
+        <ru>Автор</ru>
+    </author>
+    <delete>
+        <en>Delete</en>
+        <ru>Удалить</ru>
+    </delete>
+    <edit>
+        <en>Edit</en>
+        <ru>Редактировать</ru>
+    </edit>
+    <message>
+        <en>Message</en>
+        <ru>Сообщение</ru>
+    </message>
+    <required>
+        <en>This field is required</en>
+        <ru>Это поле обязательно для заполнения</ru>
+    </required>
+    <submit>
+        <en>Submit</en>
+        <ru>Отправить</ru>
+    </submit>
+</local>
