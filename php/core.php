@@ -5,13 +5,13 @@ require_once(www_root . 'www.php');
 
 try
 {
-    $www = www::create('en', 'us');
+    $www = www::create('ru', 'us');
 
     try
     {
         if($result = $www->request_document($_SERVER['REQUEST_URI']))
         {
-            echo $result->text();
+            echo $result->render();
         }
     }
     catch(Exception $e)

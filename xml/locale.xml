@@ -24,10 +24,20 @@
         </title>
         <description>
             <en>
-                This is sample website built on Easyweb CMF.
+                <p>
+                    This is sample website built on Easyweb CMF.
+                </p>
+                <p>
+                    <a href="https://github.com/nyan-cat/easyweb">https://github.com/nyan-cat/easyweb</a>
+                </p>
             </en>
             <ru>
-                Это пример сайта, построенного на Easyweb CMF.
+                <p>
+                    Это пример сайта, построенного на Easyweb CMF.
+                </p>
+                <p>
+                    <a href="https://github.com/nyan-cat/easyweb">https://github.com/nyan-cat/easyweb</a>
+                </p>
             </ru>
         </description>
     </about>
