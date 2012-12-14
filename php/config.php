@@ -9,4 +9,7 @@ define('config_location', '/config/config.xml');
 define('locale_location', '/xml/locale.xml');
 define('cache_location',  '/tmp/cache.tmp');
 
+# require_once(www_root . 'profiler.php');
+# profiler::checkpoint('Start');
+
 ?>

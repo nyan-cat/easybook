@@ -9,9 +9,9 @@ try
 
     try
     {
-        if($result = $www->request_document($_SERVER['REQUEST_URI']))
+        if($xhtml = $www->request_document($_SERVER['REQUEST_URI']))
         {
-            echo $result->render();
+            echo $xhtml->render();
         }
     }
     catch(Exception $e)
@@ -23,5 +23,7 @@ catch(Exception $e)
 {
     echo '<pre>' . $e . '</pre>';
 }
+
+ # profiler::render();
 
 ?>
