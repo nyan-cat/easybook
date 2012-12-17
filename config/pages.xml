@@ -13,7 +13,11 @@
             <template name="body" src="/tpl/about/body.xsl" />
         </template>
     </page>
-    <page name="post" url="/post/" action="/php/post.php" />
-    <page name="edit" url="/edit/" action="/php/edit.php" permission="message:edit(message_id -> $post:id)" />
-    <page name="delete" url="/delete/(message_id -> natural)/" action="/php/delete.php" permission="message:edit(message_id -> $message_id)" />
+    <page name="post" url="/post/" action="/php/post.php" code="302" message="Found" />
+    <page name="edit" url="/edit/" action="/php/edit.php" permission="message:edit(message_id -> $post:id)" code="302" message="Found" />
+    <page name="delete" url="/delete/(message_id -> natural)/" action="/php/delete.php" permission="message:edit(message_id -> $message_id)" code="302" message="Found" />
+    <page name="test" url="/test/" action="/php/test.php" />
+    <page name="404" code="404" message="Not Found">
+        <template src="/tpl/404.xsl" />
+    </page>
 </pages>

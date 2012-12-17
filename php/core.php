@@ -9,7 +9,9 @@ try
 
     try
     {
-        if($xhtml = $www->request_document($_SERVER['REQUEST_URI']))
+        $xhtml = $www->request_document($_SERVER['REQUEST_URI'], $response);
+        $response->flush();
+        if($xhtml)
         {
             echo $xhtml->render();
         }

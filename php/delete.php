@@ -1,13 +1,13 @@
 <?php
 
-function action($www)
+function action($www, $response)
 {
-    $www->query_document('message:delete', array
+    $www->query('message:delete', array
     (
         'message_id' => $www->variable('url:message_id')
     ));
 
-    header('Location: /');
+    $response->location('/');
 }
 
 ?>

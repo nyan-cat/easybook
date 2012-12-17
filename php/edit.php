@@ -2,16 +2,16 @@
 
 require_once(www_root . 'post.php');
 
-function action($www)
+function action($www, $response)
 {
-    $www->query_document('message:edit', array
+    $www->query('message:edit', array
     (
         'message_id' => post::hidden('id'),
         'author'     => post::text('author'),
         'message'    => post::textarea('message')
     ));
 
-    header('Location: /');
+    $response->location('/');
 }
 
 ?>
