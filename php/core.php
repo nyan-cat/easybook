@@ -5,11 +5,11 @@ require_once(www_root . 'www.php');
 
 try
 {
-    $www = www::create('ru', 'us');
+    $www = www::create('en', 'us');
 
     try
     {
-        $xhtml = $www->request_document($_SERVER['REQUEST_URI'], $response);
+        $xhtml = $www->request($_SERVER['REQUEST_URI'], $response);
         $response->flush();
         if($xhtml)
         {
