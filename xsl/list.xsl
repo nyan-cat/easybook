@@ -5,7 +5,6 @@
     xmlns:php="http://php.net/xsl"
     xmlns:www="https://github.com/nyan-cat/easyweb"
     exclude-result-prefixes="php www">
-    <xsl:output omit-xml-declaration="yes" encoding="utf-8" />
     <xsl:template match="/*">
         <xsl:for-each select="message">
             <div class="row">
