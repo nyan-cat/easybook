@@ -1,7 +1,5 @@
 <?php
 
-require_once(www_root . 'post.php');
-
 function action($www, $response)
 {
     $www->query('message:edit', array
