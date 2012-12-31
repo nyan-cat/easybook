@@ -4,7 +4,6 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:php="http://php.net/xsl"
     xmlns:www="https://github.com/nyan-cat/easyweb"
-    xmlns:qqq="http://ya.ru"
     exclude-result-prefixes="php www">
     <xsl:template match="/">
         <html>

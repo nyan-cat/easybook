@@ -2,5 +2,4 @@
 
 <datasources>
     <datasource name="main" type="mysql" server="localhost" username="guest" password="samplepassword" database="easybook" charset="utf8" />
-    <datasource name="metadata" type="solr" server="localhost" port="8080" url="/solr/" username="solradmin" password="limitsolr64" />
 </datasources>
