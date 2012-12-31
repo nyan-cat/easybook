@@ -26,6 +26,6 @@ catch(Exception $e)
     echo '<pre>' . $e . '</pre>';
 }
 
- # profiler::render();
+# profiler::render();
 
 ?>

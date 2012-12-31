@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <procedures>
-    <procedure name="test" datasource="main" root="test" item="test" empty="false">
-        <output name="lol" transform="json2xml" />
-        <output name="pampam" transform="nl2p" />
-        <output name="gogo" transform="vars" />
-        select '{"name" : "value", "foo" : ["bar", 2, 3]}' as lol,
-'123
-456' as pampam, concat('$', 'user:ip') as gogo;
-    </procedure>
     <procedure name="message:list" datasource="main" root="messages" item="message" empty="true">
         select id, author, message, ip, timestampdiff(minute, created, now()) as minutes, created from message order by created desc;
     </procedure>
